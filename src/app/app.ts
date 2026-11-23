@@ -22,7 +22,6 @@ export class App {
       const emailControl = form.controls['email'];
       const phoneControl = form.controls['phone'];
       const messages: string[] = [];
-
       if (emailControl?.invalid) {
         messages.push(
           emailControl.hasError('required')
@@ -37,7 +36,6 @@ export class App {
             : 'Enter a valid 10-digit Indian phone number.',
         );
       }
-
       this.alertMessage =
         messages.join(' ') || 'Please complete all required fields correctly.';
       return;
@@ -45,11 +43,9 @@ export class App {
     this.alertMessage = '';
     this.submitted = true;
   }
-
   protected clearAlert(): void {
     this.alertMessage = '';
   }
-
   protected registerAnother(): void {
     this.formData = this.emptyForm();
     this.submitted = false;

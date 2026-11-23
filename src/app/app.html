@@ -16,7 +16,6 @@
         @if (alertMessage) {
           <div class="form-alert" role="alert">{{ alertMessage }}</div>
         }
-
         <div class="form-row">
           <label for="name">Name</label>
           <input
@@ -29,7 +28,6 @@
             required
           />
         </div>
-
         <div class="form-row">
           <label for="email">Email <span class="required-mark" aria-hidden="true">*</span></label>
           <input
@@ -44,7 +42,6 @@
           />
           <small class="field-hint">Use a Gmail address ending in @gmail.com.</small>
         </div>
-
         <div class="form-row">
           <label for="age">Age</label>
           <input
@@ -58,7 +55,6 @@
             required
           />
         </div>
-
         <div class="form-row">
           <label for="course">Course</label>
           <select id="course" name="course" [(ngModel)]="formData.course" required>
@@ -99,7 +95,6 @@
           </div>
           <small class="field-hint">Enter a 10-digit Indian mobile number.</small>
         </div>
-
         <div class="form-row address-row">
           <label for="address">Address</label>
           <textarea
@@ -112,7 +107,6 @@
             required
           ></textarea>
         </div>
-
         <button class="submit-button" type="submit">Register</button>
       </form>
     } @else {
